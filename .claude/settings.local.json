@@ -1,6 +1,11 @@
 {
+  "enableAllProjectMcpServers": true,
   "enabledMcpjsonServers": [
     "notion"
   ],
-  "enableAllProjectMcpServers": true
+  "permissions": {
+    "allow": [
+      "WebSearch"
+    ]
+  }
 }
