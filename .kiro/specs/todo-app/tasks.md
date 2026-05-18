@@ -23,7 +23,7 @@
   - `pnpm test` が実行でき、ダミーテスト（`expect(1).toBe(1)`）がパスすること
   - _Requirements: 12.1, 12.2, 12.3_
 
-- [ ] 1.4 Zod スキーマとドメイン型を定義する
+- [x] 1.4 Zod スキーマとドメイン型を定義する
   - `src/features/todos/types/todo.ts` に `PrioritySchema`, `TodoSchema`, `CreateTodoInputSchema`, `UpdateTodoInputSchema` を定義する
   - `Todo`, `Priority`, `CreateTodoInput`, `UpdateTodoInput`, `FilterType`, `SortField` 型をエクスポートする
   - `PrioritySchema.default('low')` により未指定時に `'low'` が設定されること
