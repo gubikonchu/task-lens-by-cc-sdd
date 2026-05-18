@@ -68,7 +68,7 @@
 ---
 
 - [ ] 3. UI コンポーネントの実装
-- [ ] 3.1 (P) TodoForm コンポーネントを実装する（追加・編集共用フォーム）
+- [x] 3.1 (P) TodoForm コンポーネントを実装する（追加・編集共用フォーム）
   - `src/features/todos/components/TodoForm.tsx` に `mode: 'add' | 'edit'` と `initialTodo?: Todo` prop を持つフォームを実装する
   - タイトル（必須テキスト）・期限日（date input、オプション）・優先度（Select、high/medium/low）の 3 フィールドを実装する
   - 送信時に `CreateTodoInputSchema.safeParse()` でバリデーションし、失敗時はフィールドレベルにエラーメッセージを表示する
