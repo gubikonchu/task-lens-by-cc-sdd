@@ -30,7 +30,7 @@
   - TypeScript コンパイルエラーなしにファイルがインポートできること
   - _Requirements: 1.2, 2.4, 6.1, 6.3_
 
-- [ ] 1.5 日付ヘルパーユーティリティを実装する
+- [x] 1.5 日付ヘルパーユーティリティを実装する
   - `src/shared/lib/dateHelpers.ts` に `isOverdue()`, `formatDate()`, `compareDates()`, `PRIORITY_ORDER` を実装する
   - `isOverdue(undefined)` → `false`、`isOverdue('2020-01-01')` → `true`、`isOverdue('2099-12-31')` → `false` になること
   - `formatDate(undefined)` → `''`、有効日付 → `'yyyy/MM/dd'` 形式になること
