@@ -1,11 +1,20 @@
 {
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "PowerShell(Get-Command *)",
+      "PowerShell(& \"C:\\\\Program Files\\\\Volta\\\\pnpm.exe\" --version 2>&1)",
+      "PowerShell(& \"C:\\\\Program Files\\\\Volta\\\\volta.exe\" install pnpm 2>&1)",
+      "PowerShell(& \"C:\\\\Program Files\\\\Volta\\\\volta.exe\" list 2>&1)",
+      "Skill(kiro-verify-completion)",
+      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\shky1\\\\home\\\\projects\\\\task-lens\\\\by-cc-sdd\\\\git-repo\\\\task-lens-by-cc-sdd\\\\todo-app\" | Where-Object { $_.Name -ne 'node_modules' } | Select-Object Name)",
+      "PowerShell(ls \"C:\\\\Users\\\\shky1\\\\home\\\\projects\\\\task-lens\\\\by-cc-sdd\\\\git-repo\\\\task-lens-by-cc-sdd\\\\todo-app\\\\src\" -Recurse | Where-Object { $_.Name -ne 'node_modules' } | Select-Object FullName)",
+      "PowerShell(Get-ChildItem -Path \"C:\\\\Users\\\\shky1\\\\home\\\\projects\\\\task-lens\\\\by-cc-sdd\\\\git-repo\\\\task-lens-by-cc-sdd\\\\todo-app\\\\src\" -Recurse -Force | ForEach-Object { $_.FullName })",
+      "Skill(kiro-validate-impl)"
+    ]
+  },
   "enableAllProjectMcpServers": true,
   "enabledMcpjsonServers": [
     "notion"
-  ],
-  "permissions": {
-    "allow": [
-      "WebSearch"
-    ]
-  }
+  ]
 }
