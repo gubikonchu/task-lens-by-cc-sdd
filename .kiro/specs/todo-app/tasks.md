@@ -137,7 +137,7 @@
   - `pnpm test` で Store テストが全件パスすること
   - _Requirements: 12.1, 12.3_
 
-- [ ] 5.2 (P) useFilteredSortedTodos の単体テストを実装する（フィルタリングとソート）
+- [x] 5.2 (P) useFilteredSortedTodos の単体テストを実装する（フィルタリングとソート）
   - `filter='active'` で `completed: false` のタスクのみ返ることを検証する
   - `filter='completed'` で `completed: true` のタスクのみ返ることを検証する
   - `filter='overdue'` で期限切れ（`isOverdue=true`）かつ未完了のタスクのみ返ることを検証する
