@@ -110,7 +110,7 @@
 ---
 
 - [ ] 4. App 統合と永続化エラー処理
-- [ ] 4.1 App.tsx でルートコンポーネントを実装する（全体統合）
+- [x] 4.1 App.tsx でルートコンポーネントを実装する（全体統合）
   - `src/app/App.tsx` に `filter: FilterType` と `sort: SortField` の useState を追加する
   - `useTodos()` と `useFilteredSortedTodos()` を呼び出し、取得したデータを各コンポーネントへ props で渡す
   - `storageError` が true のとき画面上部に永続化失敗の警告バナーを表示する
