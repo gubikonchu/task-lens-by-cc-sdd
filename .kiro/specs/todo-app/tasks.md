@@ -8,7 +8,7 @@
   - `vite.config.ts` に `@vitejs/plugin-react` と `resolve.alias` を追加する
   - `pnpm dev` でブラウザに Vite のデフォルト画面が表示されること
 
-- [ ] 1.2 Tailwind CSS v4 と shadcn/ui を設定する
+- [x] 1.2 Tailwind CSS v4 と shadcn/ui を設定する
   - `pnpm add tailwindcss @tailwindcss/vite` をインストールし、`vite.config.ts` に `tailwindcss()` プラグインを追加する
   - `src/index.css` に `@import "tailwindcss"` と shadcn デザイントークンを記述する
   - `pnpm dlx shadcn@latest init` を実行し、Button / Input / Badge / Select / Checkbox / Label コンポーネントを追加する
