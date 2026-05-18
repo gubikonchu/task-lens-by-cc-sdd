@@ -16,7 +16,7 @@
   - shadcn の Button コンポーネントが正しくスタイル適用されてレンダリングされること
   - _Requirements: 10.1_
 
-- [ ] 1.3 Vitest テスト環境を設定する
+- [x] 1.3 Vitest テスト環境を設定する
   - `vitest`, `jsdom`, `@testing-library/react`, `@testing-library/jest-dom`, `@testing-library/user-event` をインストールする
   - `vitest.config.ts` に `environment: 'jsdom'`, `globals: true`, `setupFiles: ['./src/test/setup.ts']` を設定する
   - `src/test/setup.ts` に `expect.extend(matchers)` と `afterEach(cleanup)` を記述する
