@@ -1,0 +1,3 @@
+peerDependencyRules:
+  allowedVersions:
+    react: "19"

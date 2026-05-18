@@ -1,7 +1,7 @@
 # Implementation Plan
 
 - [ ] 1. Foundation: プロジェクトセットアップとテスト基盤
-- [ ] 1.1 Vite 6 + React 19 + TypeScript 5 プロジェクトを初期化する
+- [x] 1.1 Vite 6 + React 19 + TypeScript 5 プロジェクトを初期化する
   - `pnpm create vite@latest todo-app --template react-ts` でスキャフォールドを作成する
   - `package.json` に `pnpm.peerDependencyRules.allowedVersions` で React 19 の peer dep 競合を回避する
   - `tsconfig.app.json` に `"strict": true`, `"moduleResolution": "bundler"`, `"paths": { "@/*": ["./src/*"] }` を設定する
