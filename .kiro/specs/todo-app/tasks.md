@@ -98,7 +98,7 @@
   - _Boundary: TodoItem コンポーネント_
   - _Depends: 3.1_
 
-- [ ] 3.4 TodoList コンポーネントを実装する（アニメーション付きリスト）
+- [x] 3.4 TodoList コンポーネントを実装する（アニメーション付きリスト）
   - `src/features/todos/components/TodoList.tsx` に `AnimatePresence` を使ったリストを実装する
   - `todos` が空のとき「{currentFilter} に該当するタスクがありません」メッセージを表示する
   - `AnimatePresence` の各 `motion.li` に `initial` / `animate` / `exit` props でスライドイン・アウトアニメーションを設定する
