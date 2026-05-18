@@ -86,7 +86,7 @@
   - _Requirements: 7.1, 8.1_
   - _Boundary: TodoFilters, TodoSort コンポーネント_
 
-- [ ] 3.3 TodoItem コンポーネントを実装する
+- [x] 3.3 TodoItem コンポーネントを実装する
   - `src/features/todos/components/TodoItem.tsx` に単一タスクの表示・操作 UI を実装する
   - チェックボックス（完了トグル）・タイトル・優先度バッジ・期限日表示・編集ボタン・削除ボタンを配置する
   - `isOverdue(dueDate)` が true のとき期限切れスタイル（赤色テキスト + 警告アイコン）を表示し、未設定時は非表示にする
