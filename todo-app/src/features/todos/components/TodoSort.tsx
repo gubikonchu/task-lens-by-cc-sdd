@@ -24,7 +24,7 @@ export function TodoSort({ currentSort, onSortChange }: TodoSortProps) {
       value={currentSort}
       onValueChange={(value) => onSortChange(value as SortField)}
     >
-      <SelectTrigger>
+      <SelectTrigger className="min-h-[44px] w-full sm:w-auto">
         <SelectValue />
       </SelectTrigger>
       <SelectContent>

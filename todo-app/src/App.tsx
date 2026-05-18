@@ -31,26 +31,32 @@ function App() {
   }
 
   return (
-    <div>
+    <div className="min-h-screen bg-background">
       {storageError && (
-        <div role="alert">
+        <div role="alert" className="bg-destructive/10 text-destructive px-4 py-3 text-sm text-center">
           データの保存に失敗しました。セッション内での操作は継続できます。
         </div>
       )}
-      <h1>タスク管理</h1>
-      <TodoForm
-        mode="add"
-        onSubmit={(input) => addTodo(input as CreateTodoInput)}
-      />
-      <TodoFilters currentFilter={filter} onFilterChange={setFilter} />
-      <TodoSort currentSort={sort} onSortChange={setSort} />
-      <TodoList
-        todos={filteredTodos}
-        currentFilter={filter}
-        onToggle={toggleTodo}
-        onUpdate={updateTodo}
-        onDelete={deleteTodo}
-      />
+      <div className="max-w-2xl mx-auto px-4 py-8">
+        <h1 className="text-2xl font-bold mb-6">タスク管理</h1>
+        <div className="mb-6">
+          <TodoForm
+            mode="add"
+            onSubmit={(input) => addTodo(input as CreateTodoInput)}
+          />
+        </div>
+        <div className="flex flex-col sm:flex-row gap-4 mb-4">
+          <TodoFilters currentFilter={filter} onFilterChange={setFilter} />
+          <TodoSort currentSort={sort} onSortChange={setSort} />
+        </div>
+        <TodoList
+          todos={filteredTodos}
+          currentFilter={filter}
+          onToggle={toggleTodo}
+          onUpdate={updateTodo}
+          onDelete={deleteTodo}
+        />
+      </div>
     </div>
   )
 }

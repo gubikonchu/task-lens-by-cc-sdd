@@ -31,7 +31,7 @@ export function TodoList({
   }
 
   return (
-    <ul>
+    <ul className="flex flex-col gap-2">
       <AnimatePresence>
         {todos.map((todo) => (
           <motion.li
@@ -39,6 +39,7 @@ export function TodoList({
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: 20 }}
+            className="w-full"
           >
             <TodoItem
               todo={todo}

@@ -65,8 +65,8 @@ export function TodoForm({ mode, initialTodo, onSubmit, onCancel }: TodoFormProp
   const submitLabel = isEditMode ? '保存' : '追加'
 
   return (
-    <form onSubmit={handleSubmit} noValidate>
-      <div>
+    <form onSubmit={handleSubmit} noValidate className="flex flex-col gap-4">
+      <div className="flex flex-col gap-1">
         <Label htmlFor="todo-title">タイトル</Label>
         <Input
           id="todo-title"
@@ -75,6 +75,7 @@ export function TodoForm({ mode, initialTodo, onSubmit, onCancel }: TodoFormProp
           value={title}
           onChange={(e) => setTitle(e.target.value)}
           aria-invalid={!!errors.title}
+          className="w-full min-h-[44px]"
         />
         {errors.title && (
           <p role="alert" aria-live="polite">
@@ -83,20 +84,21 @@ export function TodoForm({ mode, initialTodo, onSubmit, onCancel }: TodoFormProp
         )}
       </div>
 
-      <div>
+      <div className="flex flex-col gap-1">
         <Label htmlFor="todo-due-date">期限日</Label>
         <Input
           id="todo-due-date"
           type="date"
           value={dueDate}
           onChange={(e) => setDueDate(e.target.value)}
+          className="w-full min-h-[44px]"
         />
       </div>
 
-      <div>
+      <div className="flex flex-col gap-1">
         <Label htmlFor="todo-priority">優先度</Label>
         <Select value={priority} onValueChange={(v) => setPriority(v as Priority)}>
-          <SelectTrigger id="todo-priority" aria-label="優先度">
+          <SelectTrigger id="todo-priority" aria-label="優先度" className="w-full min-h-[44px]">
             <SelectValue />
           </SelectTrigger>
           <SelectContent>
@@ -107,10 +109,10 @@ export function TodoForm({ mode, initialTodo, onSubmit, onCancel }: TodoFormProp
         </Select>
       </div>
 
-      <div>
-        <Button type="submit">{submitLabel}</Button>
+      <div className="flex flex-col sm:flex-row gap-2">
+        <Button type="submit" className="w-full sm:w-auto min-h-[44px]">{submitLabel}</Button>
         {isEditMode && onCancel && (
-          <Button type="button" variant="outline" onClick={onCancel}>
+          <Button type="button" variant="outline" onClick={onCancel} className="w-full sm:w-auto min-h-[44px]">
             キャンセル
           </Button>
         )}

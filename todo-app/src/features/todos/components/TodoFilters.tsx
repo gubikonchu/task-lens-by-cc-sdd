@@ -15,7 +15,7 @@ const FILTER_TABS: { value: FilterType; label: string }[] = [
 
 export function TodoFilters({ currentFilter, onFilterChange }: TodoFiltersProps) {
   return (
-    <div className="flex gap-1 flex-wrap">
+    <div className="flex flex-wrap gap-2">
       {FILTER_TABS.map(({ value, label }) => {
         const isActive = currentFilter === value
         return (
@@ -23,6 +23,7 @@ export function TodoFilters({ currentFilter, onFilterChange }: TodoFiltersProps)
             key={value}
             variant={isActive ? 'default' : 'ghost'}
             size="sm"
+            className="min-h-[44px] py-2 px-3"
             data-active={isActive ? 'true' : 'false'}
             onClick={() => onFilterChange(value)}
           >

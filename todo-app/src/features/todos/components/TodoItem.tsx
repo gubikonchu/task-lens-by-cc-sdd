@@ -57,11 +57,13 @@ export function TodoItem({ todo, onToggle, onUpdate, onDelete }: TodoItemProps) 
       className="flex items-start gap-3 rounded-md border p-3"
     >
       {/* チェックボックス */}
-      <Checkbox
-        checked={todo.completed}
-        onCheckedChange={() => onToggle(todo.id)}
-        aria-label={`完了: ${todo.title}`}
-      />
+      <div className="flex items-center justify-center min-w-[44px] min-h-[44px]">
+        <Checkbox
+          checked={todo.completed}
+          onCheckedChange={() => onToggle(todo.id)}
+          aria-label={`完了: ${todo.title}`}
+        />
+      </div>
 
       {/* メインコンテンツ */}
       <div className="flex flex-1 flex-col gap-1">
@@ -104,6 +106,7 @@ export function TodoItem({ todo, onToggle, onUpdate, onDelete }: TodoItemProps) 
           type="button"
           variant="outline"
           size="sm"
+          className="min-h-[44px] min-w-[44px]"
           onClick={() => setIsEditing(true)}
         >
           編集
@@ -112,6 +115,7 @@ export function TodoItem({ todo, onToggle, onUpdate, onDelete }: TodoItemProps) 
           type="button"
           variant="destructive"
           size="sm"
+          className="min-h-[44px] min-w-[44px]"
           onClick={() => onDelete(todo.id)}
         >
           削除
