@@ -128,7 +128,7 @@
 ---
 
 - [ ] 5. 単体テストの実装
-- [ ] 5.1 todoStore の単体テストを実装する（CRUD と永続化）
+- [x] 5.1 todoStore の単体テストを実装する（CRUD と永続化）
   - `addTodo` でタスクが追加され、デフォルト priority が `'low'` であることを検証する
   - `updateTodo` でタイトル・期限日・優先度が更新され、`updatedAt` が変化することを検証する
   - `toggleTodo` で `completed` フラグが切り替わることを検証する
