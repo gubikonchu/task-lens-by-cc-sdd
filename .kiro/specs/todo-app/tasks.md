@@ -48,7 +48,7 @@
   - `addTodo` 実行後に `useTodoStore.getState().todos` に新しいタスクが含まれること
   - _Requirements: 1.1, 1.3, 2.2, 3.1, 3.2, 4.1, 6.3, 9.1, 9.2, 9.3_
 
-- [ ] 2.2 useTodos フックを実装する
+- [x] 2.2 useTodos フックを実装する
   - `src/features/todos/hooks/useTodos.ts` に `useTodos()` を実装する
   - `useTodoStore` から `todos`, `storageError`, 全 CRUD アクションを取り出して返す
   - フックを呼び出すと `{ todos, storageError, addTodo, updateTodo, toggleTodo, deleteTodo }` オブジェクトが返ること
