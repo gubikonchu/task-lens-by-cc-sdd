@@ -55,7 +55,7 @@
   - _Requirements: 1.1, 2.2, 3.1, 3.2, 4.1, 9.3_
   - _Depends: 2.1_
 
-- [ ] 2.3 (P) useFilteredSortedTodos フックを実装する
+- [x] 2.3 (P) useFilteredSortedTodos フックを実装する
   - `src/features/todos/hooks/useFilteredSortedTodos.ts` に `useFilteredSortedTodos(todos, filter, sort)` を実装する
   - フィルターパイプライン（all / active / completed / overdue）を実装し、overdue は `!completed && isOverdue(dueDate)` で判定する
   - ソートパイプライン（dueDate 昇順・priority 降順・createdAt 降順）を filter の後に適用する
