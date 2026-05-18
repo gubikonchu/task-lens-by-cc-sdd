@@ -78,7 +78,7 @@
   - _Requirements: 1.1, 1.2, 1.3, 2.1, 2.3, 2.4, 6.1_
   - _Boundary: TodoForm コンポーネント_
 
-- [ ] 3.2 (P) TodoFilters と TodoSort コンポーネントを実装する
+- [x] 3.2 (P) TodoFilters と TodoSort コンポーネントを実装する
   - `src/features/todos/components/TodoFilters.tsx` に all / active / completed / overdue の 4 タブを実装する
   - `src/features/todos/components/TodoSort.tsx` に dueDate / priority / createdAt の Select を実装する
   - フィルタータブをクリックすると `onFilterChange` が正しい `FilterType` 値で呼び出されること
