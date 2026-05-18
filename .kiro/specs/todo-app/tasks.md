@@ -40,7 +40,7 @@
 ---
 
 - [ ] 2. Store とカスタムフックの実装
-- [ ] 2.1 Zustand Todo ストアを実装する（CRUD + localStorage 永続化）
+- [x] 2.1 Zustand Todo ストアを実装する（CRUD + localStorage 永続化）
   - `src/features/todos/store/todoStore.ts` に `useTodoStore` を実装する
   - `addTodo`, `updateTodo`, `toggleTodo`, `deleteTodo`, `setStorageError` アクションを定義する
   - Zustand `persist` ミドルウェアで `'todo-app-storage'` キーに localStorage 自動保存を設定する

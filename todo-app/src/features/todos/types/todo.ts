@@ -16,10 +16,11 @@ export type Todo = z.infer<typeof TodoSchema>
 
 export const CreateTodoInputSchema = TodoSchema.pick({
   title: true,
-  priority: true,
   dueDate: true,
+}).extend({
+  priority: PrioritySchema.optional().default('low'),
 })
-export type CreateTodoInput = z.infer<typeof CreateTodoInputSchema>
+export type CreateTodoInput = z.input<typeof CreateTodoInputSchema>
 
 export const UpdateTodoInputSchema = CreateTodoInputSchema.partial()
 export type UpdateTodoInput = z.infer<typeof UpdateTodoInputSchema>
